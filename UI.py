@@ -65,7 +65,7 @@ def save_to_file():
 if __name__ == "__main__":
     selected_papers = read_from_file()
     root = tk.Tk()
-    root.title('Newspaper Downloader')
+    root.title('Newspaper')
     root.resizable(False, False)
     root.geometry('270x320')
 
@@ -122,7 +122,7 @@ if __name__ == "__main__":
     ).grid(column=1, row=5, sticky=tk.W)
 
     download_button = ttk.Button(
-        root, text="Download", cursor="hand2", command=Thread(target=save_to_file).start
+        root, text="Save", cursor="hand2", command=Thread(target=save_to_file).start
     )
     download_button.grid(column=1, row=6, sticky=tk.E, pady=10, padx=10)
 
